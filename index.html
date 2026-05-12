@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PseudoCode Tutor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <span class="brand-icon">&lt;/&gt;</span>
+        <span class="brand-name">PseudoTutor</span>
+      </div>
+
+      <div class="sidebar-section-label">LESSONS</div>
+      <nav class="sidebar-nav" id="lessonNav"></nav>
+
+      <div class="sidebar-section-label" style="margin-top:1.5rem;">PRACTICE</div>
+      <nav class="sidebar-nav" id="quizNav">
+        <button class="nav-btn" onclick="showQuiz()">
+          <span class="nav-icon">&#9998;</span> Quiz Me
+        </button>
+      </nav>
+
+      <div class="sidebar-progress">
+        <div class="progress-label">
+          <span>Lessons</span>
+          <span id="progressText">0 / 11</span>
+        </div>
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill" id="progressFill" style="width:0%"></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main" id="mainContent">
+      <!-- injected by JS -->
+    </main>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
